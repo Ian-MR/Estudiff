@@ -1,0 +1,182 @@
+/* Esses dois se não me engano é pra deixar escodido a janelinha */
+
+.modal{
+    display: none;}
+
+.modal:target{
+    display: flex;}
+
+/* Aparentemente se mexer aqui é pra mudar o visual */
+
+.modal{
+    /* Aqui é o background que fica turvo */
+    text-align: left;
+    backdrop-filter: blur(2px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    padding: 2rem;}
+
+.modal:target{
+    /* Aqui é pra centralizar alguma coisa mas não sei direito o que  */
+    justify-content: space-around;
+    align-items: center;}
+
+.modal__overlay{
+    /* Isso é pra se clicar em qualquer lugar fora caixa branca fechar ela  */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    cursor: default;}
+
+.modal__content{
+    /* Aqui é a caixa */
+    width: 300px;
+    position: relative;
+    background-color: #f5f5f5;
+    padding: 1.5rem;
+    border-radius: 30px;}
+
+#link-cad {
+    padding: 0 2px 9px 0;}
+
+#logo-login {
+    padding: 0 5px 20px 0;}
+
+.modal__close{
+    /* Aqui é pra mudar o botão */
+    color: initial;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px 15px 0 0;
+    padding-top: 7px;
+    height: 30px; width: 30px;
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;}
+
+.modal__close:hover{
+    color: red;
+}
+/*
+.login{
+    float: left;
+    width: 50%;
+}
+*/
+/*
+.cadastro{
+    min-width: 100px;
+    float: right;
+    width: 50%;
+}
+
+.cadastro table tr td div {
+    font-family: Century Gothic;
+    margin-left: 40px;
+}
+*/
+/*
+.login table tr td div {
+    margin-left: 15px;
+    font-family: Century Gothic;
+}
+*/
+
+/* Linha pra separar as colunas */
+
+/*.linha-vertical {
+    height: 150px;
+    border-left: 1px solid;  }
+
+/* Não consegui pensar em outro jeito de da um espacinho da outra coluna, ai fiz uma gambiarra */
+
+input[type=text], input[type=password], input[type=email] {
+    outline: none;
+    text-align: center;}
+
+.btn {
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100px;
+    text-align: center;
+    border: none;
+}
+
+.btn-enviar {
+    background-color: #009200;
+    border: 1px solid #009200;
+    transition: background-color .5s;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.btn-enviar:hover {
+    background-color: #fff;
+    color: #009200;
+}
+
+.btn-cadastrar {
+    width: 120px;
+    background-color: #009200;
+    border: 1px solid #009200;
+    transition: background-color .5s;
+    margin-left: 91px;
+    margin-top: 20px;
+}
+.btn-cadastrar:hover {
+    background-color: #fff;
+    color: #009200;
+}
+
+.ícones{
+    margin-top: 3px;
+    margin-left: 80px;
+}
+
+.ícones p{
+    margin-left: 25px;
+    margin-top: 15px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.campo {
+    border-radius: 15px;
+    font-size: 12px;
+    padding: 6px;
+    border: 1px solid #009200;
+}
+
+::placeholder {
+    text-align: center;
+    font-family: Century Gothic;
+    font-size: 13px;
+}
+
+.tela-cad {
+    font-family: Century Gothic;
+    font-size: 11px;
+}
+
+#cad-tela {
+    text-decoration: none;
+    color: #009200;
+    cursor: pointer;
+}
+
+#cad-tela:hover {
+    text-decoration: #009200 underline;
+}

@@ -1,0 +1,50 @@
+body {
+	font-family: Arial; 
+	background-image: url(backg/fundo.png) }
+
+*{
+	margin:0;
+	padding:0; }
+
+header{
+	height: 145px;
+	padding:25px;
+	padding-top:15px; }
+
+footer{
+	clear: both;
+	box-shadow: 0px -2px 25px #d5d5d5;
+	background-color: #009200;
+	height: 75px; 
+	padding: 10px 0px 10px 5px;}
+
+li{
+	display: inline;}
+
+ul{
+	display: inline;
+	list-style-type: none;}
+
+/* ids */
+#menu{ 
+	background-color: #009200;
+	box-shadow: 0px 4px 10px #d5d5d5;
+	text-align: left;
+	height:40px;
+	font-family: Century Gothic;
+	font-size: 20px;
+	padding-left: 25px;
+	padding-top: 14px;}
+
+#menu a{
+	text-decoration: none;
+	color: white;
+	padding: 15px; }
+
+#menu a:hover{
+	background-color: #147614; }
+
+/*class */
+.direita{
+	float: right;
+	margin-right: 20px; }
